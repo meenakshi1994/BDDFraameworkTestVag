@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Objects;
+import static org.junit.Assert.assertEquals;
 
 public class MyStepdefs {
     private String element;
@@ -56,6 +57,7 @@ public class MyStepdefs {
             }
         }
         if (count == 4) {
+            Assert.assertEquals("4",count);
             System.out.println("4 foreign players are there in the Team");
         }
         if (count > 4) {
@@ -85,6 +87,7 @@ public class MyStepdefs {
             }
         }
         if (count1>=1) {
+            Assert.assertEquals("1",count1);
             System.out.println(count1+" wicket keeper is there");
         }
         else  {
